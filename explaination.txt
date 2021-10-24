@@ -1,0 +1,6 @@
+After creating the Dockerfile please run the following:
+1 . sudo docker build . -t web
+2 . sudo docker run --expose=9090 <image_id>
+
+Use deployment file with 2 replica to deploy this web app:
+kubectl apply -f web_deployment.yaml
